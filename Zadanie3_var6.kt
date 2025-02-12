@@ -7,6 +7,7 @@ fun main(){
         money_sis2 = readLine()!!.toDouble()
 
         when{
+            (money_sis1 < 0 || money_sis2 < 0) -> println("Неверный формат данных")
             (money_sis1 > money_sis2) -> {var otv = String.format("%.2f", (money_sis1 - money_sis2)); println("Сестра 1 должна отдать сетсре 2 - $otv р что бы суммы стали равными")}
             (money_sis1 < money_sis2) -> {var otv = String.format("%.2f", (money_sis2 - money_sis1)); println("Сестра 2 должна отдать сетсре 1 - $otv р что бы суммы стали равными")}
 
